@@ -115,13 +115,12 @@ export function createDeckGLComponent(
     };
 
     render() {
-      const { formData, payload, setControlValue, height, width } = this.props;
+      const { formData, setControlValue, height, width } = this.props;
       const { layer, viewport } = this.state;
 
       return (
         <DeckGLContainerStyledWrapper
           ref={this.containerRef}
-          mapboxApiAccessToken={payload.data.mapboxApiKey}
           viewport={viewport}
           layers={[layer]}
           mapStyle={formData.mapbox_style}
@@ -155,7 +154,6 @@ export function createCategoricalDeckGLComponent(
       <CategoricalDeckGLContainer
         datasource={datasource}
         formData={formData}
-        mapboxApiKey={payload.data.mapboxApiKey}
         setControlValue={setControlValue}
         viewport={viewport}
         getLayer={getLayer}

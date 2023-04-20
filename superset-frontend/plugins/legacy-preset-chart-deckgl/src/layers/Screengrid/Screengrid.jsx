@@ -204,7 +204,7 @@ class DeckGLScreenGrid extends React.PureComponent {
   };
 
   render() {
-    const { formData, payload, setControlValue } = this.props;
+    const { formData, setControlValue } = this.props;
 
     return (
       <div>
@@ -220,7 +220,6 @@ class DeckGLScreenGrid extends React.PureComponent {
           viewport={this.state.viewport}
           width={this.props.width}
           height={this.props.height}
-          mapboxApiAccessToken={payload.data.mapboxApiKey}
           mapStyle={formData.mapbox_style}
           setControlValue={setControlValue}
           onValuesChange={this.onValuesChange}

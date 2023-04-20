@@ -27,7 +27,7 @@ import { StaticMap } from 'react-map-gl';
 import DeckGL from 'deck.gl';
 import { styled } from '@superset-ui/core';
 import Tooltip from './components/Tooltip';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 const TICK = 250; // milliseconds
 
@@ -36,7 +36,6 @@ const propTypes = {
   layers: PropTypes.array.isRequired,
   setControlValue: PropTypes.func,
   mapStyle: PropTypes.string,
-  mapboxApiAccessToken: PropTypes.string.isRequired,
   children: PropTypes.node,
   bottomMargin: PropTypes.number,
   width: PropTypes.number.isRequired,
@@ -123,9 +122,9 @@ export class DeckGLContainer extends React.Component {
             onViewStateChange={this.onViewStateChange}
           >
             <StaticMap
+              disableTokenWarning
               preserveDrawingBuffer
               mapStyle={this.props.mapStyle}
-              mapboxApiAccessToken={this.props.mapboxApiAccessToken}
             />
           </DeckGL>
           {children}

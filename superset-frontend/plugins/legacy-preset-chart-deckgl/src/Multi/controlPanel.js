@@ -18,7 +18,7 @@
  */
 import { t, validateNonEmpty } from '@superset-ui/core';
 import { sections } from '@superset-ui/chart-controls';
-import { viewport, mapboxStyle } from '../utilities/Shared_DeckGL';
+import { viewport, maplibreStyle } from '../utilities/Shared_DeckGL';
 
 export default {
   controlPanelSections: [
@@ -27,7 +27,7 @@ export default {
       label: t('Map'),
       expanded: true,
       controlSetRows: [
-        [mapboxStyle, viewport],
+        [maplibreStyle, viewport],
         [
           {
             name: 'deck_slices',

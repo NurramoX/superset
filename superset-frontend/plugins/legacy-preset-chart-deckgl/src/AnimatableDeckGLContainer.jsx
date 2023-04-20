@@ -39,7 +39,6 @@ const propTypes = {
   viewport: PropTypes.object.isRequired,
   children: PropTypes.node,
   mapStyle: PropTypes.string,
-  mapboxApiAccessToken: PropTypes.string.isRequired,
   setControlValue: PropTypes.func,
   onValuesChange: PropTypes.func,
   width: PropTypes.number.isRequired,
@@ -78,7 +77,6 @@ export default class AnimatableDeckGLContainer extends React.PureComponent {
       viewport,
       setControlValue,
       mapStyle,
-      mapboxApiAccessToken,
       height,
       width,
     } = this.props;
@@ -92,7 +90,6 @@ export default class AnimatableDeckGLContainer extends React.PureComponent {
           layers={layers}
           setControlValue={setControlValue}
           mapStyle={mapStyle}
-          mapboxApiAccessToken={mapboxApiAccessToken}
           bottomMargin={disabled ? 0 : PLAYSLIDER_HEIGHT}
           width={width}
           height={height}

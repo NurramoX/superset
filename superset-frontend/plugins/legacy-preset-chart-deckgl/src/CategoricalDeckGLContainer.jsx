@@ -63,7 +63,6 @@ const propTypes = {
   getLayer: PropTypes.func.isRequired,
   getPoints: PropTypes.func.isRequired,
   height: PropTypes.number.isRequired,
-  mapboxApiKey: PropTypes.string.isRequired,
   onAddFilter: PropTypes.func,
   payload: PropTypes.object.isRequired,
   setControlValue: PropTypes.func.isRequired,
@@ -270,7 +269,6 @@ export default class CategoricalDeckGLContainer extends React.PureComponent {
           values={this.state.values}
           disabled={this.state.disabled}
           viewport={this.state.viewport}
-          mapboxApiAccessToken={this.props.mapboxApiKey}
           mapStyle={this.props.formData.mapbox_style}
           setControlValue={this.props.setControlValue}
           width={this.props.width}

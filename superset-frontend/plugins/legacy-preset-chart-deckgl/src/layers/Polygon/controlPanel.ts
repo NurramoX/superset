@@ -41,7 +41,7 @@ import {
   lineWidth,
   lineType,
   reverseLongLat,
-  mapboxStyle,
+  maplibreStyle,
 } from '../../utilities/Shared_DeckGL';
 import { dndLineColumn } from '../../utilities/sharedDndControls';
 
@@ -94,7 +94,7 @@ const config: ControlPanelConfig = {
       label: t('Map'),
       expanded: true,
       controlSetRows: [
-        [mapboxStyle, viewport],
+        [maplibreStyle, viewport],
         [autozoom, null],
       ],
     },

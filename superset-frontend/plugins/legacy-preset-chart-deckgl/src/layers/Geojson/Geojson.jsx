@@ -20,7 +20,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { GeoJsonLayer } from 'deck.gl';
 import geojsonExtent from '@mapbox/geojson-extent';
-
 import { DeckGLContainerStyledWrapper } from '../../DeckGLContainer';
 import { hexToRGB } from '../../utils/colors';
 import sandboxedEval from '../../utils/sandbox';
@@ -186,7 +185,6 @@ class DeckGLGeoJson extends React.Component {
     return (
       <DeckGLContainerStyledWrapper
         ref={this.containerRef}
-        mapboxApiAccessToken={payload.data.mapboxApiKey}
         viewport={viewport}
         layers={[layer]}
         mapStyle={formData.mapbox_style}

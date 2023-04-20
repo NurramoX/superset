@@ -28,7 +28,7 @@ import {
   jsDataMutator,
   jsOnclickHref,
   jsTooltip,
-  mapboxStyle,
+  maplibreStyle,
   spatial,
   viewport,
 } from '../../utilities/Shared_DeckGL';
@@ -50,7 +50,7 @@ const config: ControlPanelConfig = {
     {
       label: t('Map'),
       controlSetRows: [
-        [mapboxStyle, viewport],
+        [maplibreStyle, viewport],
         ['color_picker'],
         [autozoom],
         [gridSize],

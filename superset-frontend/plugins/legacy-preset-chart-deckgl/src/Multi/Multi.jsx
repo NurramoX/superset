@@ -128,7 +128,6 @@ class DeckMulti extends React.PureComponent {
     return (
       <DeckGLContainerStyledWrapper
         ref={this.containerRef}
-        mapboxApiAccessToken={payload.data.mapboxApiKey}
         viewport={this.state.viewport || this.props.viewport}
         layers={layers}
         mapStyle={formData.mapbox_style}

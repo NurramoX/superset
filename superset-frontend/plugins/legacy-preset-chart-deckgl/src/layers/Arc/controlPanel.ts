@@ -34,7 +34,7 @@ import {
   legendFormat,
   legendPosition,
   viewport,
-  mapboxStyle,
+  maplibreStyle,
 } from '../../utilities/Shared_DeckGL';
 
 const config: ControlPanelConfig = {
@@ -77,7 +77,7 @@ const config: ControlPanelConfig = {
     {
       label: t('Map'),
       controlSetRows: [
-        [mapboxStyle, viewport],
+        [maplibreStyle, viewport],
         [autozoom, null],
       ],
     },
