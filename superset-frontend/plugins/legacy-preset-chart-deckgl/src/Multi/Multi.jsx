@@ -130,7 +130,7 @@ class DeckMulti extends React.PureComponent {
         ref={this.containerRef}
         viewport={this.state.viewport || this.props.viewport}
         layers={layers}
-        mapStyle={formData.mapbox_style}
+        mapStyle={formData.maplibre_style}
         setControlValue={setControlValue}
         onViewportChange={this.onViewportChange}
         height={height}

@@ -220,7 +220,7 @@ class DeckGLScreenGrid extends React.PureComponent {
           viewport={this.state.viewport}
           width={this.props.width}
           height={this.props.height}
-          mapStyle={formData.mapbox_style}
+          mapStyle={formData.maplibre_style}
           setControlValue={setControlValue}
           onValuesChange={this.onValuesChange}
           onViewportChange={this.onViewportChange}

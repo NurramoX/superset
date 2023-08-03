@@ -316,7 +316,7 @@ class DeckGLPolygon extends React.Component {
           viewport={viewport}
           width={this.props.width}
           height={this.props.height}
-          mapStyle={formData.mapbox_style}
+          mapStyle={formData.maplibre_style}
           setControlValue={setControlValue}
           onValuesChange={this.onValuesChange}
           onViewportChange={this.onViewportChange}

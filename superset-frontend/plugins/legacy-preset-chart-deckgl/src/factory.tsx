@@ -123,7 +123,7 @@ export function createDeckGLComponent(
           ref={this.containerRef}
           viewport={viewport}
           layers={[layer]}
-          mapStyle={formData.mapbox_style}
+          mapStyle={formData.maplibre_style}
           setControlValue={setControlValue}
           width={width}
           height={height}

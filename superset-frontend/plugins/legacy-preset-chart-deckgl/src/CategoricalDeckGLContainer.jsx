@@ -269,7 +269,7 @@ export default class CategoricalDeckGLContainer extends React.PureComponent {
           values={this.state.values}
           disabled={this.state.disabled}
           viewport={this.state.viewport}
-          mapStyle={this.props.formData.mapbox_style}
+          mapStyle={this.props.formData.maplibre_style}
           setControlValue={this.props.setControlValue}
           width={this.props.width}
           height={this.props.height}

@@ -187,7 +187,7 @@ class DeckGLGeoJson extends React.Component {
         ref={this.containerRef}
         viewport={viewport}
         layers={[layer]}
-        mapStyle={formData.mapbox_style}
+        mapStyle={formData.maplibre_style}
         setControlValue={setControlValue}
         height={height}
         width={width}

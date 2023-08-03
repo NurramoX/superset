@@ -364,7 +364,7 @@ export const reverseLongLat = {
 };
 
 export const maplibreStyle = {
-  name: 'mapbox_style',
+  name: 'maplibre_style',
   config: {
     type: 'SelectControl',
     label: t('Map Style'),
