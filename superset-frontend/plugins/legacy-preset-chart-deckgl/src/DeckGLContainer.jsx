@@ -23,7 +23,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { isEqual } from 'lodash';
-import { StaticMap } from 'react-map-gl';
+import { Map } from 'react-map-gl';
 import DeckGL from 'deck.gl';
 import { styled } from '@superset-ui/core';
 import Tooltip from './components/Tooltip';
@@ -121,10 +121,11 @@ export class DeckGLContainer extends React.Component {
             glOptions={{ preserveDrawingBuffer: true }}
             onViewStateChange={this.onViewStateChange}
           >
-            <StaticMap
-              disableTokenWarning
-              preserveDrawingBuffer
+            <Map
+              //preserveDrawingBuffer
               mapStyle={this.props.mapStyle}
+              mapLib={import('maplibre-gl')}
+              maplibreLogo
             />
           </DeckGL>
           {children}

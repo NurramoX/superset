@@ -371,9 +371,9 @@ export const maplibreStyle = {
     clearable: false,
     renderTrigger: true,
     choices: [
-      ['http://localhost:8070/styles/basic-preview/style.json', 'Light'],
+      ['http://localhost:8070/styles/zurickman/style.json', 'Light'],
     ],
-    default: 'http://localhost:8070/styles/basic-preview/style.json',
+    default: 'http://localhost:8070/styles/zurickman/style.json',
     description: t('Base layer map style'),
   },
 };

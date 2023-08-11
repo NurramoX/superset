@@ -30,7 +30,7 @@
     "d3-array": "^1.2.4",
     "d3-color": "^1.4.1",
     "d3-scale": "^3.0.0",
-    "deck.gl": "8.5.2",
+    "deck.gl": "8.9.18",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "moment": "^2.20.1",
@@ -46,7 +46,7 @@
     "@superset-ui/core": "*",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-map-gl": "^4.0.10",
+    "react-map-gl": "^7.1.0",
     "maplibre-gl": "*"
   },
   "publishConfig": {
