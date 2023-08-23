@@ -122,7 +122,6 @@ export class DeckGLContainer extends React.Component {
             onViewStateChange={this.onViewStateChange}
           >
             <Map
-              //preserveDrawingBuffer
               mapStyle={this.props.mapStyle}
               mapLib={import('maplibre-gl')}
               maplibreLogo
