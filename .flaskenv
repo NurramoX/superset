@@ -16,3 +16,4 @@
 #
 FLASK_APP="superset.app:create_app()"
 FLASK_DEBUG=true
+MAPBOX_API_KEY=""

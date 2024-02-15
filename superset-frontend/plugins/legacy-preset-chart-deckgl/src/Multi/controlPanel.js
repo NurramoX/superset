@@ -18,7 +18,12 @@
  */
 import { t, validateNonEmpty } from '@superset-ui/core';
 import { sections } from '@superset-ui/chart-controls';
-import { viewport, mapboxStyle } from '../utilities/Shared_DeckGL';
+import {
+  viewport,
+  mapboxStyle,
+  legendPosition,
+  legendFormat,
+} from '../utilities/Shared_DeckGL';
 
 export default {
   controlPanelSections: [
@@ -32,11 +37,11 @@ export default {
           {
             name: 'deck_slices',
             config: {
-              type: 'SelectAsyncControl',
+              type: 'MultiSelectAsyncControl',
               multi: true,
               label: t('deck.gl charts'),
               validators: [validateNonEmpty],
-              default: [],
+              default: [{}],
               description: t(
                 'Pick a set of deck.gl charts to layer on top of one another',
               ),
@@ -50,6 +55,7 @@ export default {
                 }
                 return data.result.map(o => ({
                   value: o.id,
+                  datasource: o.datasource_id,
                   label: o.slice_name,
                 }));
               },
@@ -58,6 +64,10 @@ export default {
           null,
         ],
       ],
+    },
+    {
+      label: t('Geom Color'),
+      controlSetRows: [[legendPosition], [legendFormat], ['color_scheme']],
     },
     {
       label: t('Query'),

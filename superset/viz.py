@@ -1976,7 +1976,7 @@ class DeckGLMultiLayer(BaseViz):
         from superset import db
         from superset.models.slice import Slice
 
-        slice_ids = self.form_data.get("deck_slices")
+        slice_ids = self.form_data.get("deck_slices")[0]['val']
         slices = db.session.query(Slice).filter(Slice.id.in_(slice_ids)).all()
         return {
             "mapboxApiKey": config["MAPBOX_API_KEY"],

@@ -48,6 +48,7 @@ import DndColumnSelectControl, {
 import XAxisSortControl from './XAxisSortControl';
 import CurrencyControl from './CurrencyControl';
 import ColumnConfigControl from './ColumnConfigControl';
+import MultiSelectAsyncControl from './MultiSelectAsyncControl';
 
 const controlMap = {
   AnnotationLayerControl,
@@ -67,6 +68,7 @@ const controlMap = {
   FixedOrMetricControl,
   HiddenControl,
   SelectAsyncControl,
+  MultiSelectAsyncControl,
   SelectControl,
   SliderControl,
   SpatialControl,
